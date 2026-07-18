@@ -126,13 +126,21 @@ async function analyzeLesson() {
   startLoading();
   const started = Date.now();
   try {
-    const response = await fetch('/api/analyze', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ lesson_text: lessonText, grade_subject: els.grade.value.trim(), use_demo: mode === 'demo' }),
-    });
-    const data = await response.json();
-    if (!response.ok || !data.ok) throw new Error(data.error || 'Analysis failed');
+    let data;
+    if (mode === 'demo' && globalThis.CLASSROOM_MIRROR_DEMO) {
+      const analysis = structuredClone(globalThis.CLASSROOM_MIRROR_DEMO);
+      const gradeSubject = els.grade.value.trim();
+      if (gradeSubject) analysis.meta.grade_subject = gradeSubject.slice(0, 80);
+      data = {ok: true, analysis};
+    } else {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ lesson_text: lessonText, grade_subject: els.grade.value.trim(), use_demo: mode === 'demo' }),
+      });
+      data = await response.json();
+      if (!response.ok || !data.ok) throw new Error(data.error || 'Analysis failed');
+    }
     const minimumAnimation = mode === 'demo' ? 2700 : 800;
     await new Promise(resolve => setTimeout(resolve, Math.max(0, minimumAnimation - (Date.now() - started))));
     lastAnalysis = data.analysis;
