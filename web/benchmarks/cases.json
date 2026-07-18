@@ -1,0 +1,63 @@
+[
+  {
+    "id": "science-seasons-distance",
+    "title": "Seasons and orbital distance",
+    "grade_subject": "Grade 6 · Earth science",
+    "lesson": "Goal: Explain why seasons change. Warm-up: Why is summer hotter? Demonstration: Put a flashlight in the center and move a tilted globe closer to the light for summer and farther away for winter. Define axis, orbit, direct light, and indirect light while students watch. After seven minutes, ask students to label four orbit positions and explain why summer is warm.",
+    "planted_risks": [
+      { "label": "distance misconception", "must_include_any": ["distance", "closer", "farther"], "evidence_marker": "move a tilted globe closer to the light for summer" },
+      { "label": "delayed checkpoint", "must_include_any": ["checkpoint", "seven minutes", "response"], "evidence_marker": "After seven minutes" }
+    ]
+  },
+  {
+    "id": "math-fractions-add-denominators",
+    "title": "Adding unlike fractions",
+    "grade_subject": "Grade 5 · Mathematics",
+    "lesson": "Goal: Add fractions with unlike denominators. Teacher models 1/2 + 1/3 by adding the top numbers and then adding the bottom numbers to get 2/5. Students copy five similar examples from the board. The teacher defines numerator, denominator, equivalent, common, and simplify during the modeling. Students complete ten independent problems; answers are checked at the end.",
+    "planted_risks": [
+      { "label": "invalid fraction procedure", "must_include_any": ["denominator", "2/5", "procedure"], "evidence_marker": "adding the bottom numbers to get 2/5" },
+      { "label": "practice without feedback", "must_include_any": ["feedback", "checked at the end", "checkpoint"], "evidence_marker": "answers are checked at the end" }
+    ]
+  },
+  {
+    "id": "biology-plant-mass",
+    "title": "Where plant mass comes from",
+    "grade_subject": "Grade 7 · Biology",
+    "lesson": "Goal: Explain how plants grow. Ask where a tree's wood comes from. Tell students that roots absorb food and most of the tree's mass from soil. Show a time-lapse of a seedling, define photosynthesis and chlorophyll, then have students draw arrows from soil into the roots. Exit question: Why does a plant need good soil to gain mass?",
+    "planted_risks": [
+      { "label": "mass from soil misconception", "must_include_any": ["mass", "soil", "carbon dioxide"], "evidence_marker": "most of the tree's mass from soil" },
+      { "label": "assessment reinforces misconception", "must_include_any": ["exit", "reinforce", "soil"], "evidence_marker": "Why does a plant need good soil to gain mass?" }
+    ]
+  },
+  {
+    "id": "history-single-source",
+    "title": "Industrialization through one account",
+    "grade_subject": "Grade 9 · History",
+    "lesson": "Goal: Evaluate the effects of industrialization. Read a factory owner's speech praising efficiency, rising output, and new jobs. The source is presented without author context or date. Students highlight three benefits and write a paragraph explaining why industrialization improved life for workers. The strongest paragraph will be read aloud.",
+    "planted_risks": [
+      { "label": "single perspective", "must_include_any": ["perspective", "source", "factory owner"], "evidence_marker": "factory owner's speech" },
+      { "label": "conclusion predetermined", "must_include_any": ["predetermined", "improved", "conclusion"], "evidence_marker": "why industrialization improved life for workers" }
+    ]
+  },
+  {
+    "id": "ela-hidden-rubric",
+    "title": "Evidence-based paragraph",
+    "grade_subject": "Grade 8 · English language arts",
+    "lesson": "Goal: Write an evidence-based paragraph about the narrator. Tell students to write a strong paragraph using good evidence and clear reasoning. Do not show the rubric because it will make the task too easy. Students write silently for twenty minutes and submit their first draft for a grade. Early finishers wait; questions are answered individually at the teacher desk.",
+    "planted_risks": [
+      { "label": "success criteria hidden", "must_include_any": ["rubric", "criteria", "strong paragraph"], "evidence_marker": "Do not show the rubric" },
+      { "label": "no formative feedback", "must_include_any": ["feedback", "first draft", "twenty minutes"], "evidence_marker": "submit their first draft for a grade" }
+    ]
+  },
+  {
+    "id": "physics-force-motion",
+    "title": "Force and constant motion",
+    "grade_subject": "Grade 8 · Physical science",
+    "lesson": "Goal: Explain the relationship between force and motion. State that a moving object needs a continuous forward force or it will immediately stop. Demonstrate by pushing a book across a rough table. Students list the force that keeps a bicycle moving after the rider stops pedaling. Define inertia only in the final two minutes, then ask students whether objects in space eventually run out of motion.",
+    "planted_risks": [
+      { "label": "force sustains motion misconception", "must_include_any": ["continuous", "force", "friction", "inertia"], "evidence_marker": "needs a continuous forward force" },
+      { "label": "demonstration confounds friction", "must_include_any": ["rough table", "friction", "confound"], "evidence_marker": "rough table" }
+    ]
+  }
+]
+

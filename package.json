@@ -1,0 +1,15 @@
+{
+  "name": "classroom-mirror-repository",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "test": "npm --prefix web test",
+    "lint": "npm --prefix web run lint",
+    "eval": "npm --prefix web run eval --"
+    ,"smoke:live": "npm --prefix web run smoke:live"
+    ,"smoke:multi-agent": "npm --prefix web run smoke:multi-agent"
+    ,"smoke:analysis": "npm --prefix web run smoke:analysis"
+  }
+}

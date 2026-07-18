@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+coverage/
+
+# Local build and runtime state
+node_modules/
+dist/
+.vinext/
+.wrangler/
+

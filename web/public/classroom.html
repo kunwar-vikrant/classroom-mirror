@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preflight a lesson through four simulated learner perspectives before students experience it.">
+  <title>Classroom Mirror — See the lesson before you teach it</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Classroom Mirror home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36"><path d="M8 6h16a4 4 0 0 1 4 4v20H12a4 4 0 0 1-4-4V6Z"/><path d="M12 10h16M12 30V10"/></svg>
+      </span>
+      <span>Classroom <strong>Mirror</strong></span>
+    </a>
+    <div class="header-meta">
+      <span class="model-pill"><i></i> Powered by GPT-5.6</span>
+      <a href="#how-it-works">How it works</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span>Lesson-plan preflight</span><b>Built for teachers, not dashboards</b></div>
+      <h1 id="hero-title">See the lesson through<br><em>every learner’s eyes.</em></h1>
+      <p class="hero-copy">Simulate a diverse classroom before you teach. Catch misconceptions, invisible barriers, and missed moments—then redesign the path without changing the goal.</p>
+      <div class="proof-row" aria-label="Product benefits">
+        <div><strong>4</strong><span>learner lenses</span></div>
+        <div><strong>&lt; 2 min</strong><span>to preflight</span></div>
+        <div><strong>1</strong><span>stronger lesson</span></div>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Lesson analysis workspace">
+      <div class="input-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="step-number">01</span>
+            <div><h2>Bring a lesson</h2><p>Rough notes are welcome.</p></div>
+          </div>
+          <button class="text-button" id="sample-button" type="button">Load sample lesson <span>↗</span></button>
+        </div>
+
+        <label class="field-label" for="grade-subject">Grade &amp; subject</label>
+        <input id="grade-subject" class="text-input" value="Grade 6 · Earth science" maxlength="80" placeholder="e.g. Grade 6 · Earth science">
+
+        <div class="lesson-label-row">
+          <label class="field-label" for="lesson-text">Lesson plan</label>
+          <span id="char-count">0 characters</span>
+        </div>
+        <textarea id="lesson-text" class="lesson-input" spellcheck="true" placeholder="Paste the learning goal, activities, key questions, and assessment…"></textarea>
+
+        <div class="analysis-controls">
+          <div class="mode-control" role="group" aria-label="Analysis mode">
+            <button class="mode-option active" data-mode="demo" type="button">Instant demo</button>
+            <button class="mode-option" data-mode="live" type="button">Live GPT-5.6</button>
+          </div>
+          <span class="mode-note" id="mode-note">No API key needed</span>
+        </div>
+
+        <button class="primary-button" id="analyze-button" type="button">
+          <span>Mirror this lesson</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </button>
+        <p class="privacy-note"><span>◇</span> Lesson content is sent to OpenAI only in live mode.</p>
+      </div>
+
+      <aside class="preview-panel" aria-label="Learner lens preview">
+        <div class="preview-topline"><span>Inside the classroom</span><span class="live-dot">Ready</span></div>
+        <div class="classroom-orbit">
+          <div class="orbit-line orbit-one"></div>
+          <div class="orbit-line orbit-two"></div>
+          <div class="teacher-core"><span>YOUR</span><strong>LESSON</strong></div>
+          <div class="student-node node-1"><i>M</i><span>Verbal<br>reasoner</span></div>
+          <div class="student-node node-2"><i>L</i><span>Language<br>builder</span></div>
+          <div class="student-node node-3"><i>A</i><span>Attention<br>shifter</span></div>
+          <div class="student-node node-4"><i>N</i><span>Pattern<br>seeker</span></div>
+        </div>
+        <blockquote>“The best time to discover a barrier is <em>before</em> a learner meets it.”</blockquote>
+        <div class="preview-footer"><span>Perspective, not prediction</span><span>Designed with care</span></div>
+      </aside>
+    </section>
+
+    <section class="loading-section" id="loading-section" hidden aria-live="polite">
+      <div class="loading-card">
+        <div class="mirror-loader"><i></i><i></i><i></i><i></i><span>5.6</span></div>
+        <div>
+          <span class="step-number">02</span>
+          <h2 id="loading-title">The classroom is thinking…</h2>
+          <p id="loading-message">Four learner lenses are reading your lesson in parallel.</p>
+          <div class="progress-track"><i id="progress-bar"></i></div>
+          <div class="agent-statuses" id="agent-statuses"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results" id="results" hidden aria-live="polite">
+      <div class="results-heading">
+        <div>
+          <span class="step-number">03</span>
+          <p class="result-kicker">Your classroom mirror</p>
+          <h2 id="result-title">Lesson analysis</h2>
+          <p id="result-summary"></p>
+        </div>
+        <div class="result-actions">
+          <span class="mode-badge" id="result-mode">Demo analysis</span>
+          <button class="icon-button" id="export-button" title="Export analysis as JSON" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 17v3h14v-3"/></svg>
+            Export
+          </button>
+        </div>
+      </div>
+
+      <nav class="result-tabs" aria-label="Analysis sections">
+        <button class="result-tab active" data-tab="overview" type="button">Classroom pulse</button>
+        <button class="result-tab" data-tab="learners" type="button">Learner voices <i>4</i></button>
+        <button class="result-tab" data-tab="redesign" type="button">Lesson redesign</button>
+        <button class="result-tab" data-tab="ticket" type="button">Exit ticket</button>
+      </nav>
+
+      <div class="tab-panel active" id="tab-overview"></div>
+      <div class="tab-panel" id="tab-learners"></div>
+      <div class="tab-panel" id="tab-redesign"></div>
+      <div class="tab-panel" id="tab-ticket"></div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div>
+        <span class="section-label">Under the hood</span>
+        <h2>Not four personas.<br>Four focused reviews.</h2>
+      </div>
+      <ol>
+        <li><span>01</span><div><strong>Delegate</strong><p>GPT-5.6 coordinates four bounded learner-analysis agents in parallel.</p></div></li>
+        <li><span>02</span><div><strong>Challenge</strong><p>Each lens must cite evidence from the lesson and propose one concrete response.</p></div></li>
+        <li><span>03</span><div><strong>Reconcile</strong><p>The root agent finds shared risks, preserves the goal, and rebuilds the learning path.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark mini" aria-hidden="true"></span><span>Classroom <strong>Mirror</strong></span></div>
+    <p>AI can surface possibilities. Teachers make the decisions.</p>
+    <span>Built with Codex + GPT-5.6</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
+

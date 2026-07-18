@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-07-18T07:46:03.429Z",
+  "model": "gpt-5.6-sol",
+  "cases": 6,
+  "planted_risk_recall": 1,
+  "exact_quote_rate": 1,
+  "totals": {
+    "planted": 12,
+    "detected": 12,
+    "grounded": 28,
+    "findings": 28
+  },
+  "rows": [
+    {
+      "id": "science-seasons-distance",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 5,
+      "total_findings": 5,
+      "risks": [
+        {
+          "label": "distance misconception",
+          "detected": true
+        },
+        {
+          "label": "delayed checkpoint",
+          "detected": true
+        }
+      ]
+    },
+    {
+      "id": "math-fractions-add-denominators",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 4,
+      "total_findings": 4,
+      "risks": [
+        {
+          "label": "invalid fraction procedure",
+          "detected": true
+        },
+        {
+          "label": "practice without feedback",
+          "detected": true
+        }
+      ]
+    },
+    {
+      "id": "biology-plant-mass",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 5,
+      "total_findings": 5,
+      "risks": [
+        {
+          "label": "mass from soil misconception",
+          "detected": true
+        },
+        {
+          "label": "assessment reinforces misconception",
+          "detected": true
+        }
+      ]
+    },
+    {
+      "id": "history-single-source",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 4,
+      "total_findings": 4,
+      "risks": [
+        {
+          "label": "single perspective",
+          "detected": true
+        },
+        {
+          "label": "conclusion predetermined",
+          "detected": true
+        }
+      ]
+    },
+    {
+      "id": "ela-hidden-rubric",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 5,
+      "total_findings": 5,
+      "risks": [
+        {
+          "label": "success criteria hidden",
+          "detected": true
+        },
+        {
+          "label": "no formative feedback",
+          "detected": true
+        }
+      ]
+    },
+    {
+      "id": "physics-force-motion",
+      "planted": 2,
+      "detected": 2,
+      "grounded_findings": 5,
+      "total_findings": 5,
+      "risks": [
+        {
+          "label": "force sustains motion misconception",
+          "detected": true
+        },
+        {
+          "label": "demonstration confounds friction",
+          "detected": true
+        }
+      ]
+    }
+  ]
+}
