@@ -8,6 +8,10 @@ Classroom Mirror helps teachers preflight a lesson through four focused learner 
 
 **OpenAI Build Week track:** Education
 
+[Try the public instant demo](https://kunwar-vikrant.github.io/classroom-mirror/) · [View the source repository](https://github.com/kunwar-vikrant/classroom-mirror)
+
+The public deployment intentionally uses the deterministic instant demo so it never exposes a paid API key. Live GPT-5.6 mode is demonstrated in the video and can be run locally with the setup below.
+
 ## Why this exists
 
 Teachers routinely discover ambiguity, inaccessible entry points, and misconception-producing examples only after a lesson is underway. Generic lesson generators create more content. Classroom Mirror serves a different need: a pre-mortem for an existing lesson.

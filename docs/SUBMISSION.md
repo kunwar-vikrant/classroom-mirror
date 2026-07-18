@@ -40,8 +40,8 @@ Codex was the primary development environment from the initial empty repository 
 
 ## URLs to complete
 
-- Public demo: `TODO`
-- Code repository: `TODO`
+- Public demo: `https://kunwar-vikrant.github.io/classroom-mirror/`
+- Code repository: `https://github.com/kunwar-vikrant/classroom-mirror`
 - Public YouTube video: `TODO`
 - Codex `/feedback` Session ID: `TODO — obtain from this primary task`
 
@@ -49,9 +49,9 @@ Codex was the primary development environment from the initial empty repository 
 
 - [x] Live GPT-5.6 smoke test passes
 - [x] Live benchmark results saved and documented without exaggeration
-- [ ] Public demo deployed safely; do not expose an unrestricted paid API endpoint
-- [ ] Personal Git identity confirmed; no work email in commit history
-- [ ] Repository pushed to personal account and made public with MIT license
+- [x] Public demo deployed safely; no unrestricted paid API endpoint exposed
+- [x] Personal Git identity confirmed; no work email in commit history
+- [x] Repository pushed to personal account and made public with MIT license
 - [ ] README links verified from a clean clone
 - [ ] Video is public, under three minutes, and includes narration
 - [ ] Video explicitly demonstrates Codex and GPT-5.6 usage
