@@ -52,7 +52,7 @@ Codex was the primary development environment from the initial empty repository 
 - [x] Public demo deployed safely; no unrestricted paid API endpoint exposed
 - [x] Personal Git identity confirmed; no work email in commit history
 - [x] Repository pushed to personal account and made public with MIT license
-- [ ] README links verified from a clean clone
+- [x] README links and setup verified from a clean public clone
 - [ ] Video is public, under three minutes, and includes narration
 - [ ] Video explicitly demonstrates Codex and GPT-5.6 usage
 - [ ] `/feedback` run in the primary Codex task
